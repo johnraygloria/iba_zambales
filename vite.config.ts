@@ -7,7 +7,6 @@ export default defineConfig({
     port: 3000,
     open: true
   },
-  base: process.env.VITE_BASE_PATH || '/iba_zambales',
   build: {
     outDir: 'dist',
     sourcemap: false,
