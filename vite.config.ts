@@ -7,6 +7,7 @@ export default defineConfig({
     port: 3000,
     open: true
   },
+  base: process.env.VITE_BASE_PATH || '/iba_zambales',
   build: {
     outDir: 'dist',
     sourcemap: false,
@@ -16,6 +17,7 @@ export default defineConfig({
         manualChunks: {
           vendor: ['react', 'react-dom'],
           router: ['react-router-dom']
+
         }
       }
     }
