@@ -3,14 +3,14 @@
   "version": "1.0.0",
   "description": "News and content platform for Iba, Zambales, Philippines",
   "private": true,
-"scripts": {
-  "dev": "vite",
-  "build": "run-s type-check vite-build",
-  "type-check": "tsc --noEmit",
-  "vite-build": "vite build",
-  "preview": "vite preview",
-  "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
-},
+  "scripts": {
+    "dev": "vite",
+    "build": "npm run type-check && npm run vite-build",
+    "type-check": "tsc --noEmit",
+    "vite-build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
+  },
 
   "dependencies": {
     "lucide-react": "^0.263.1",
